@@ -1,5 +1,6 @@
 import { SignInButton, SignOutButton, SignUpButton } from "@clerk/nextjs";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.css";
 
@@ -15,16 +16,16 @@ const NavBar: React.FC<NavBarProps> = ({ isSignedIn }) => {
         </div>
         <ul className={styles.navLinks}>
           <li>
-            <a href="#">Gebetszeiten</a>
+            <Link href="#">Gebetszeiten</Link>
           </li>
           <li>
-            <a href="#">Veranstaltungen</a>
+            <Link href="#">Veranstaltungen</Link>
           </li>
           <li>
-            <a href="#">News</a>
+            <Link href="#">News</Link>
           </li>
           <li>
-            <a href="#">Kontakt</a>
+            <Link href="#">Kontakt</Link>
           </li>
         </ul>
         <div className={styles.hamburger}>
@@ -49,16 +50,16 @@ const NavBar: React.FC<NavBarProps> = ({ isSignedIn }) => {
       <div className={styles.menubar}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link href="#">Home</Link>
           </li>
           <li>
-            <a href="#">Services</a>
+            <Link href="#">Services</Link>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <Link href="#">Blog</Link>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <Link href="#">Contact Us</Link>
           </li>
         </ul>
       </div>
