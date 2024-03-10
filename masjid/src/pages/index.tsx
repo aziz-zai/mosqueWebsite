@@ -1,5 +1,8 @@
 import { useUser } from "@clerk/nextjs";
 import type { NextPage } from "next";
+import Gebetszeiten from "~/components/Gebetszeiten";
+import NavBar from "~/components/NavBar/navbar";
+import { Footer } from "~/components/footer";
 import { PageLayout } from "../components/layout";
 const Home: NextPage = () => {
   const { isLoaded: userLoaded, isSignedIn } = useUser();
@@ -9,10 +12,15 @@ const Home: NextPage = () => {
     <>
       {isSignedIn ? (
         <PageLayout>
+          <NavBar isSignedIn={isSignedIn} />
           <div>hello</div>
         </PageLayout>
       ) : (
-        <div>ciao</div>
+        <div>
+          <NavBar isSignedIn={isSignedIn} />
+          <Gebetszeiten />
+          <Footer />
+        </div>
       )}
     </>
   );
