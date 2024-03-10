@@ -8,13 +8,14 @@ generator client {
 datasource db {
     provider = "mysql"
     url      = env("DATABASE_URL")
+    relationMode = "prisma"
 }
 
-model Post {
+model User {
     id        Int      @id @default(autoincrement())
     name      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-
+    role      String
     @@index([name])
 }
