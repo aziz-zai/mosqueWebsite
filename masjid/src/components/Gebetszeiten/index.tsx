@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { GebetszeitenTable } from "../component/gebetszeitenTable";
 
@@ -31,18 +32,18 @@ const Gebetszeiten = () => {
               </p>
             </div>
             <div className="flex w-fit justify-start gap-3 pb-0 sm:w-full sm:justify-center sm:pb-4 md:justify-start lg:gap-5 lg:pb-28 ">
-              <a
+              <Link
                 href="/#contact"
                 className="bg-primary-100 hover:bg-primary-200 rounded  px-6 py-3 text-sm font-bold text-white sm:px-3 sm:py-2 lg:text-base xl:px-6 xl:py-3 "
               >
                 Mehr erfahren
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#about"
                 className="bg-secondary-0 hover:bg-secondary-100 text-primaryText rounded px-6 py-3 text-sm font-bold sm:px-3 sm:py-2 lg:text-base xl:px-6 xl:py-3 "
               >
                 Kontakt
-              </a>
+              </Link>
             </div>
           </div>
         </div>
