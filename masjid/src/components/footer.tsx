@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <div className="bg-primary-300 text-secondary-0 flex items-center justify-center py-[50px] font-[16px]">
@@ -5,10 +7,10 @@ export const Footer = () => {
         <div className="flex h-[130px] flex-col md:m-auto">
           <h3 className="mb-1 font-bold text-white">Links</h3>
           <ul className="flex flex-col text-white">
-            <a href="/#top">Gebetszeiten</a>
-            <a href="/#about">Veranstaltungen</a>
-            <a href="/#contact">News</a>
-            <a href="/Impressum">Kontakt</a>
+            <Link href="/#top">Gebetszeiten</Link>
+            <Link href="/#about">Veranstaltungen</Link>
+            <Link href="/#contact">News</Link>
+            <Link href="/Impressum">Kontakt</Link>
           </ul>
         </div>
         <div className="flex h-[130px] flex-col md:m-auto">
